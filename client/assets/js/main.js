@@ -1,5 +1,6 @@
 Template.eisis.rendered = function(){
-	 Tracker.autorun(function(){
+	 if (!this._rendered) {
+             this._rendered = true;
 	 	 
 		 MainLoop();
 		 an();
@@ -7,7 +8,7 @@ Template.eisis.rendered = function(){
 	 	 dis2D();
 	 	 PoolBlocks3D();
 	 	 winMethode();
-	 });
+	 }
 }
 
  MainLoop = function (){
