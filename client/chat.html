@@ -1,7 +1,8 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="https://rawgithub.com/mrdoob/three.js/master/build/three.js"></script>
-	<script src="js/dat.gui.min.js"></script>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Eisis!</title> 
 </head> 
 <body> 
@@ -9,7 +10,44 @@
 	<div>
 		{{> chatTemplate }}
 	</div>
+	<h1>Spiel</h1>
 	<div>
 		{{> eisis }}
 	</div>
 </body> 
+
+<template name="eisis"> 
+		<div id="style-selector"></div>
+		<div class="action-icon" id="pause"></div>
+		
+		<div id="infos"></div>
+		<canvas id="canvas-2d" class="viewer"></canvas>
+		<div id="canvas-3d" class="viewer"></div>
+		
+
+		<script src="https://rawgithub.com/mrdoob/three.js/master/build/three.js"></script>
+		<script src="assets/libs/jquery.min.js"></script>
+		<script src="assets/libs/hammer.min.js"></script>
+		<script src="assets/libs/jquery.hammer.min.js"></script>
+		<script src="assets/libs/three.min.js"></script>
+		<script src="assets/libs/shaders/BleachBypassShader.js"></script>
+		<script src="assets/libs/shaders/ColorCorrectionShader.js"></script>
+		<script src="assets/libs/shaders/ConvolutionShader.js"></script>
+		<script src="assets/libs/shaders/CopyShader.js"></script>
+		<script src="assets/libs/shaders/FXAAShader.js"></script>
+		<script src="assets/libs/postprocessing/EffectComposer.js"></script>
+		<script src="assets/libs/postprocessing/BloomPass.js"></script>
+		<script src="assets/libs/postprocessing/RenderPass.js"></script>
+		<script src="assets/libs/postprocessing/ShaderPass.js"></script>
+		<script src="assets/libs/postprocessing/MaskPass.js"></script>
+		<script src="assets/libs/three/Mirror.js"></script>
+		<script src="assets/fonts/helvetiker_regular.typeface.js"></script>
+		
+		<script src="assets/js/config.js"></script>
+		<script src="assets/js/window.js"></script>
+		<script src="assets/js/game.js"></script>
+		<script src="assets/js/display/display2D.js"></script>
+		<script src="assets/js/display/display3D.js"></script>
+		<script src="assets/js/display.js"></script>
+		<script src="assets/js/main.js"></script>
+</template> 

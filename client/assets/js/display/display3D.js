@@ -1,16 +1,3 @@
-/** 
- * @author Jérémy BOUNY / https://github.com/jbouny | http://www.jeremybouny.fr
- * @file js/display3D.js
- * 
- * Part of the project asw-tetris https://github.com/jbouny/asw-tetris
- * 
- * Display the tetris game in a simple 3D View.
- */
- 
- 
-/**
- * Pool of 3D blocks
- */
 function PoolBlocks3D( inMaterialManager )
 {
 	this.m_NbTypes = 7;
